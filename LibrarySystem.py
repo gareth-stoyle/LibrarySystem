@@ -1,4 +1,3 @@
-import csv
 import json
 import time
 from datetime import date
@@ -12,7 +11,7 @@ class Notification(object):
         Dummy function to notify a subject.
 
         Arguments:
-            msg: the notificaiton message (string)
+            msg: the notification message (string)
         '''
         print(msg)
 
@@ -23,7 +22,7 @@ class Notification(object):
         Arguments:
             member_id: member's ID (string)
             book_id: book's ID (string)
-            amount: the notificaiton message (int)
+            amount: the notification message (int)
         '''
         msg = ('Member:', member_id, 'owes £', amount, 'for overdue book ID:', book_id)
         self.sendEmail(msg)
